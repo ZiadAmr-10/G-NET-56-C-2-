@@ -16,10 +16,16 @@
             //Console.WriteLine(d2);
             #endregion
             #region Question03
-            int Age;
-            Console.WriteLine("Enter Age : ");
-            Age = int.Parse(Console.ReadLine());
-            Console.WriteLine($"Age : {Age}");
+            //int Age;
+            //Console.WriteLine("Enter Age : ");
+            //Age = int.Parse(Console.ReadLine());
+            //Console.WriteLine($"Age : {Age}");
+            #endregion
+            #region Question04  
+            //string s = "12a";
+            //int x = int.Parse(s);
+            //Console.WriteLine(x);
+            //It will be a FormatException because the string contains a character and cannot be converted to an int
             #endregion
         }
     }
