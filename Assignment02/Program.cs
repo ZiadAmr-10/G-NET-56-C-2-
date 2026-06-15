@@ -27,6 +27,18 @@
             //Console.WriteLine(x);
             //It will be a FormatException because the string contains a character and cannot be converted to an int
             #endregion
+            #region Question05
+            //string s = "12a";
+            //int x;
+            //if (int.TryParse(s,out x))
+            //{
+            //    Console.WriteLine(x);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid");
+            //}  
+            #endregion
         }
     }
 }
