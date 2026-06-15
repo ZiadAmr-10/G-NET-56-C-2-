@@ -10,7 +10,11 @@
             //Console.WriteLine(x);
             //It prints 9 because the decimal part is removed when casting to int
             #endregion
-
+            #region Question02
+            int n = 5;
+            double d2 = (float)n / 2;
+            Console.WriteLine(d2);
+            #endregion
         }
     }
 }
