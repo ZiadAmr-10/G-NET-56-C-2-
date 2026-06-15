@@ -11,9 +11,15 @@
             //It prints 9 because the decimal part is removed when casting to int
             #endregion
             #region Question02
-            int n = 5;
-            double d2 = (float)n / 2;
-            Console.WriteLine(d2);
+            //int n = 5;
+            //double d2 = (float)n / 2;
+            //Console.WriteLine(d2);
+            #endregion
+            #region Question03
+            int Age;
+            Console.WriteLine("Enter Age : ");
+            Age = int.Parse(Console.ReadLine());
+            Console.WriteLine($"Age : {Age}");
             #endregion
         }
     }
