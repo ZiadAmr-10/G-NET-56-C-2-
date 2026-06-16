@@ -125,6 +125,10 @@ namespace Assignment02
             //Console.WriteLine(b);
             //returns 0 because Convert.ToInt32 handles null values and returns the default integer value = 0
             #endregion
+            #region Question15
+            //string? user = null;
+            //Console.WriteLine((user ?? "Guest").ToUpper());
+            #endregion
         }
     }
 }
