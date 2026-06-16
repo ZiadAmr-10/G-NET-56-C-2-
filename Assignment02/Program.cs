@@ -110,6 +110,12 @@ namespace Assignment02
             //string? s = null;
             //Console.WriteLine(s?.Length??0);
             #endregion
+            #region Question13
+            //string? s = null;
+            //int x = Convert.ToInt32(s);
+            //Console.WriteLine(x);
+            //It prints 0 because `Convert.ToInt32(null)` returns 0 instead of throwing an exception.
+            #endregion
         }
     }
 }
