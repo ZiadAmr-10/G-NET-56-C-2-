@@ -55,10 +55,22 @@ namespace Assignment02
             //Console.WriteLine(x);
             //Its an InvalidCastException because the object contains an int(boxeing int->obj),
             //Should unbox it to its original type(int) first, then convert it to long.
-            object o = 10; //Boxing int->obj
-            int a = (int)o; //Unboxing obj->int
-            long x = (long)a; //Casting(int->long)
-            Console.WriteLine(x);
+            //object o = 10; //Boxing int->obj
+            //int a = (int)o; //Unboxing obj->int
+            //long x = (long)a; //Casting(int->long)
+            //Console.WriteLine(x);
+            #endregion
+            #region Question08
+            object o = 10;
+            long x;
+            if (o is int)
+            {
+                x = (int)o;
+            }
+            else {
+                x = -1;
+                    }
+                Console.WriteLine(x);
             #endregion
         }
     }
