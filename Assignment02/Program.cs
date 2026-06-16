@@ -82,9 +82,26 @@ namespace Assignment02
             #region Question10
             //string ? name2 = null;
             //int length = name2?.Length ?? 0;
-           //Console.WriteLine(length);
-           // It prints 0 because name2 is null.The (null-conditional operator ?) prevents accessing Length when the value is null.
-           //name2?.Length becomes null.Then the (null-coalescing operator ??) replaces the null value with 0.
+            //Console.WriteLine(length);
+            // It prints 0 because name2 is null.The (null-conditional operator ?) prevents accessing Length when the value is null.
+            //name2?.Length becomes null.Then the (null-coalescing operator ??) replaces the null value with 0.
+            #endregion
+            #region Question11
+            //string? s = null;
+            //int x = int.Parse(s ?? "0");
+            //Console.WriteLine(x);
+            //TryParse is better because it does not throw a FormatException if the input contains characters.
+            //If the value is null or not a number,returns 0.
+            string? s = null;
+            int x;
+            if (int.TryParse(s, out x))
+            {
+                Console.WriteLine(x);
+            }
+            else
+            {
+                Console.WriteLine(0);
+            }
             #endregion
         }
     }
