@@ -61,16 +61,22 @@ namespace Assignment02
             //Console.WriteLine(x);
             #endregion
             #region Question08
-            object o = 10;
-            long x;
-            if (o is int)
-            {
-                x = (int)o;
-            }
-            else {
-                x = -1;
-                    }
-                Console.WriteLine(x);
+            //object o = 10;
+            //long x;
+            //if (o is int)
+            //{
+            //    x = (int)o;
+            //}
+            //else {
+            //    x = -1;
+            //        }
+            //    Console.WriteLine(x);
+            #endregion
+            #region Question09
+            //string? name = null;
+            //Console.WriteLine(name?.Length);
+            //It prints nothing (null) because ?. checks if the value is null before accessing .
+            //Without ?,its throw NullReferenceException 
             #endregion
         }
     }
