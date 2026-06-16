@@ -92,16 +92,23 @@ namespace Assignment02
             //Console.WriteLine(x);
             //TryParse is better because it does not throw a FormatException if the input contains characters.
             //If the value is null or not a number,returns 0.
-            string? s = null;
-            int x;
-            if (int.TryParse(s, out x))
-            {
-                Console.WriteLine(x);
-            }
-            else
-            {
-                Console.WriteLine(0);
-            }
+            //string? s = null;
+            //int x;
+            //if (int.TryParse(s, out x))
+            //{
+            //    Console.WriteLine(x);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(0);
+            //}
+            #endregion
+            #region Question12
+            //string? s = null;
+            //Console.WriteLine(s!.Length);
+            //! -> its null forgive "I know this is not null." but this is null
+            //string? s = null;
+            //Console.WriteLine(s?.Length??0);
             #endregion
         }
     }
