@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System.Diagnostics;
+using System.Drawing;
 using System.Reflection.Metadata;
 
 namespace Assignment02
@@ -77,6 +78,13 @@ namespace Assignment02
             //Console.WriteLine(name?.Length);
             //It prints nothing (null) because ?. checks if the value is null before accessing .
             //Without ?,its throw NullReferenceException 
+            #endregion
+            #region Question10
+            //string ? name2 = null;
+            //int length = name2?.Length ?? 0;
+           //Console.WriteLine(length);
+           // It prints 0 because name2 is null.The (null-conditional operator ?) prevents accessing Length when the value is null.
+           //name2?.Length becomes null.Then the (null-coalescing operator ??) replaces the null value with 0.
             #endregion
         }
     }
