@@ -39,6 +39,13 @@
             //    Console.WriteLine("Invalid");
             //}  
             #endregion
+            #region Question06
+            object o = 10;
+            int a = (int)o;
+            Console.WriteLine(a + 1);
+            It prints 11 because 10 is stored in an object(boxing).
+            Then it is converted to an int(unboxing), the value is 10 + 1=11
+            #endregion
         }
     }
 }
