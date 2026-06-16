@@ -116,6 +116,15 @@ namespace Assignment02
             //Console.WriteLine(x);
             //It prints 0 because `Convert.ToInt32(null)` returns 0 instead of throwing an exception.
             #endregion
+            #region Question14
+            //string? s = null;
+            //int a = int.Parse(s);
+            //Console.WriteLine(a);
+            //throws a FormatException because int.Parse cannot handle null or strings
+            //int b = Convert.ToInt32(s);
+            //Console.WriteLine(b);
+            //returns 0 because Convert.ToInt32 handles null values and returns the default integer value = 0
+            #endregion
         }
     }
 }
