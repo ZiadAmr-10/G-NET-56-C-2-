@@ -1,4 +1,7 @@
-﻿namespace Assignment02
+﻿using System.Drawing;
+using System.Reflection.Metadata;
+
+namespace Assignment02
 {
     internal class Program
     {
@@ -40,11 +43,22 @@
             //}  
             #endregion
             #region Question06
-            object o = 10;
-            int a = (int)o;
-            Console.WriteLine(a + 1);
-            It prints 11 because 10 is stored in an object(boxing).
-            Then it is converted to an int(unboxing), the value is 10 + 1=11
+            //object o = 10;
+            //int a = (int)o;
+            //Console.WriteLine(a + 1);
+            //It prints 11 because 10 is stored in an object(boxing).
+            //Then it is converted to an int(unboxing), the value is 10 + 1=11
+            #endregion
+            #region Question07
+            //object o = 10;
+            //long x = (long)o;
+            //Console.WriteLine(x);
+            //Its an InvalidCastException because the object contains an int(boxeing int->obj),
+            //Should unbox it to its original type(int) first, then convert it to long.
+            object o = 10; //Boxing int->obj
+            int a = (int)o; //Unboxing obj->int
+            long x = (long)a; //Casting(int->long)
+            Console.WriteLine(x);
             #endregion
         }
     }
